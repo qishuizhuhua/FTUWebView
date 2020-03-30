@@ -1,0 +1,730 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8AFC195424319642001F8A47 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AFC195324319642001F8A47 /* AppDelegate.m */; };
+		8AFC195724319642001F8A47 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AFC195624319642001F8A47 /* SceneDelegate.m */; };
+		8AFC195D24319642001F8A47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AFC195B24319642001F8A47 /* Main.storyboard */; };
+		8AFC195F24319645001F8A47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AFC195E24319645001F8A47 /* Assets.xcassets */; };
+		8AFC196224319645001F8A47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AFC196024319645001F8A47 /* LaunchScreen.storyboard */; };
+		8AFC196524319645001F8A47 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AFC196424319645001F8A47 /* main.m */; };
+		8AFC196F24319645001F8A47 /* FTUWebViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AFC196E24319645001F8A47 /* FTUWebViewTests.m */; };
+		8AFC197A24319645001F8A47 /* FTUWebViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AFC197924319645001F8A47 /* FTUWebViewUITests.m */; };
+		8AFC19892431972F001F8A47 /* FTUTabWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AFC19882431972F001F8A47 /* FTUTabWebViewController.m */; };
+		8AFC19BD2431990E001F8A47 /* FTUWebViewJavascriptBridgeBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AFC19B72431990E001F8A47 /* FTUWebViewJavascriptBridgeBase.m */; };
+		8AFC19BE2431990E001F8A47 /* FTUWebViewJavascriptBridge_JS.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AFC19B82431990E001F8A47 /* FTUWebViewJavascriptBridge_JS.m */; };
+		8AFC19BF2431990E001F8A47 /* FTUWebViewJavascriptBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AFC19B92431990E001F8A47 /* FTUWebViewJavascriptBridge.m */; };
+		8AFC19C02431990E001F8A47 /* FTUWKWebViewJavascriptBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AFC19BA2431990E001F8A47 /* FTUWKWebViewJavascriptBridge.m */; };
+		8AFC19C424319D68001F8A47 /* FTUBaseWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AFC19C324319D68001F8A47 /* FTUBaseWebViewController.m */; };
+		8AFC19C72431B03C001F8A47 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AFC19C52431B03C001F8A47 /* ViewController.m */; };
+		8AFC19CA2431DD78001F8A47 /* FTUActionWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AFC19C92431DD78001F8A47 /* FTUActionWebViewController.m */; };
+		8AFC19CE2431DE8C001F8A47 /* FTUWebActionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AFC19CD2431DE8C001F8A47 /* FTUWebActionManager.m */; };
+		8AFC19D22431E3E1001F8A47 /* FTUWebURLFilterObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AFC19D12431E3E1001F8A47 /* FTUWebURLFilterObject.m */; };
+		8AFC19D52431E3FA001F8A47 /* FTUWebJSBridgeObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AFC19D42431E3FA001F8A47 /* FTUWebJSBridgeObject.m */; };
+		8AFC19D82431F335001F8A47 /* FTUWebActionManager+ShareInstance.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AFC19D72431F335001F8A47 /* FTUWebActionManager+ShareInstance.m */; };
+		8AFC19DB24322D17001F8A47 /* FTUWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AFC19DA24322D17001F8A47 /* FTUWebViewController.m */; };
+		8AFC19E424323520001F8A47 /* FTUWebJSBridgeConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8AFC19E324323520001F8A47 /* FTUWebJSBridgeConfig.plist */; };
+		8AFC19E62432352C001F8A47 /* FTUWebFilterConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8AFC19E52432352C001F8A47 /* FTUWebFilterConfig.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8AFC196B24319645001F8A47 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8AFC194724319642001F8A47 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8AFC194E24319642001F8A47;
+			remoteInfo = FTUWebView;
+		};
+		8AFC197624319645001F8A47 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8AFC194724319642001F8A47 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8AFC194E24319642001F8A47;
+			remoteInfo = FTUWebView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8AFC194F24319642001F8A47 /* FTUWebView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FTUWebView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AFC195224319642001F8A47 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8AFC195324319642001F8A47 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8AFC195524319642001F8A47 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		8AFC195624319642001F8A47 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		8AFC195C24319642001F8A47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8AFC195E24319645001F8A47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8AFC196124319645001F8A47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8AFC196324319645001F8A47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8AFC196424319645001F8A47 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8AFC196A24319645001F8A47 /* FTUWebViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FTUWebViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AFC196E24319645001F8A47 /* FTUWebViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FTUWebViewTests.m; sourceTree = "<group>"; };
+		8AFC197024319645001F8A47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8AFC197524319645001F8A47 /* FTUWebViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FTUWebViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AFC197924319645001F8A47 /* FTUWebViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FTUWebViewUITests.m; sourceTree = "<group>"; };
+		8AFC197B24319645001F8A47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8AFC19872431972F001F8A47 /* FTUTabWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FTUTabWebViewController.h; sourceTree = "<group>"; };
+		8AFC19882431972F001F8A47 /* FTUTabWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FTUTabWebViewController.m; sourceTree = "<group>"; };
+		8AFC19B52431990E001F8A47 /* FTUWebViewJavascriptBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTUWebViewJavascriptBridge.h; sourceTree = "<group>"; };
+		8AFC19B62431990E001F8A47 /* FTUWKWebViewJavascriptBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTUWKWebViewJavascriptBridge.h; sourceTree = "<group>"; };
+		8AFC19B72431990E001F8A47 /* FTUWebViewJavascriptBridgeBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTUWebViewJavascriptBridgeBase.m; sourceTree = "<group>"; };
+		8AFC19B82431990E001F8A47 /* FTUWebViewJavascriptBridge_JS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTUWebViewJavascriptBridge_JS.m; sourceTree = "<group>"; };
+		8AFC19B92431990E001F8A47 /* FTUWebViewJavascriptBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTUWebViewJavascriptBridge.m; sourceTree = "<group>"; };
+		8AFC19BA2431990E001F8A47 /* FTUWKWebViewJavascriptBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTUWKWebViewJavascriptBridge.m; sourceTree = "<group>"; };
+		8AFC19BB2431990E001F8A47 /* FTUWebViewJavascriptBridgeBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTUWebViewJavascriptBridgeBase.h; sourceTree = "<group>"; };
+		8AFC19BC2431990E001F8A47 /* FTUWebViewJavascriptBridge_JS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTUWebViewJavascriptBridge_JS.h; sourceTree = "<group>"; };
+		8AFC19C224319D68001F8A47 /* FTUBaseWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FTUBaseWebViewController.h; sourceTree = "<group>"; };
+		8AFC19C324319D68001F8A47 /* FTUBaseWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FTUBaseWebViewController.m; sourceTree = "<group>"; };
+		8AFC19C52431B03C001F8A47 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8AFC19C62431B03C001F8A47 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8AFC19C82431DD78001F8A47 /* FTUActionWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FTUActionWebViewController.h; sourceTree = "<group>"; };
+		8AFC19C92431DD78001F8A47 /* FTUActionWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FTUActionWebViewController.m; sourceTree = "<group>"; };
+		8AFC19CC2431DE8C001F8A47 /* FTUWebActionManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FTUWebActionManager.h; sourceTree = "<group>"; };
+		8AFC19CD2431DE8C001F8A47 /* FTUWebActionManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FTUWebActionManager.m; sourceTree = "<group>"; };
+		8AFC19D02431E3E1001F8A47 /* FTUWebURLFilterObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FTUWebURLFilterObject.h; sourceTree = "<group>"; };
+		8AFC19D12431E3E1001F8A47 /* FTUWebURLFilterObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FTUWebURLFilterObject.m; sourceTree = "<group>"; };
+		8AFC19D32431E3FA001F8A47 /* FTUWebJSBridgeObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FTUWebJSBridgeObject.h; sourceTree = "<group>"; };
+		8AFC19D42431E3FA001F8A47 /* FTUWebJSBridgeObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FTUWebJSBridgeObject.m; sourceTree = "<group>"; };
+		8AFC19D62431F335001F8A47 /* FTUWebActionManager+ShareInstance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FTUWebActionManager+ShareInstance.h"; sourceTree = "<group>"; };
+		8AFC19D72431F335001F8A47 /* FTUWebActionManager+ShareInstance.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "FTUWebActionManager+ShareInstance.m"; sourceTree = "<group>"; };
+		8AFC19D924322D17001F8A47 /* FTUWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FTUWebViewController.h; sourceTree = "<group>"; };
+		8AFC19DA24322D17001F8A47 /* FTUWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FTUWebViewController.m; sourceTree = "<group>"; };
+		8AFC19E324323520001F8A47 /* FTUWebJSBridgeConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = FTUWebJSBridgeConfig.plist; sourceTree = "<group>"; };
+		8AFC19E52432352C001F8A47 /* FTUWebFilterConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = FTUWebFilterConfig.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8AFC194C24319642001F8A47 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AFC196724319645001F8A47 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AFC197224319645001F8A47 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8AFC194624319642001F8A47 = {
+			isa = PBXGroup;
+			children = (
+				8AFC195124319642001F8A47 /* FTUWebView */,
+				8AFC196D24319645001F8A47 /* FTUWebViewTests */,
+				8AFC197824319645001F8A47 /* FTUWebViewUITests */,
+				8AFC195024319642001F8A47 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8AFC195024319642001F8A47 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8AFC194F24319642001F8A47 /* FTUWebView.app */,
+				8AFC196A24319645001F8A47 /* FTUWebViewTests.xctest */,
+				8AFC197524319645001F8A47 /* FTUWebViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8AFC195124319642001F8A47 /* FTUWebView */ = {
+			isa = PBXGroup;
+			children = (
+				8AFC19C62431B03C001F8A47 /* ViewController.h */,
+				8AFC19C52431B03C001F8A47 /* ViewController.m */,
+				8AFC19872431972F001F8A47 /* FTUTabWebViewController.h */,
+				8AFC19882431972F001F8A47 /* FTUTabWebViewController.m */,
+				8AFC19B32431990E001F8A47 /* WebView */,
+				8AFC195224319642001F8A47 /* AppDelegate.h */,
+				8AFC195324319642001F8A47 /* AppDelegate.m */,
+				8AFC195524319642001F8A47 /* SceneDelegate.h */,
+				8AFC195624319642001F8A47 /* SceneDelegate.m */,
+				8AFC195B24319642001F8A47 /* Main.storyboard */,
+				8AFC195E24319645001F8A47 /* Assets.xcassets */,
+				8AFC196024319645001F8A47 /* LaunchScreen.storyboard */,
+				8AFC196324319645001F8A47 /* Info.plist */,
+				8AFC196424319645001F8A47 /* main.m */,
+			);
+			path = FTUWebView;
+			sourceTree = "<group>";
+		};
+		8AFC196D24319645001F8A47 /* FTUWebViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				8AFC196E24319645001F8A47 /* FTUWebViewTests.m */,
+				8AFC197024319645001F8A47 /* Info.plist */,
+			);
+			path = FTUWebViewTests;
+			sourceTree = "<group>";
+		};
+		8AFC197824319645001F8A47 /* FTUWebViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8AFC197924319645001F8A47 /* FTUWebViewUITests.m */,
+				8AFC197B24319645001F8A47 /* Info.plist */,
+			);
+			path = FTUWebViewUITests;
+			sourceTree = "<group>";
+		};
+		8AFC19B32431990E001F8A47 /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				8AFC19DC24323487001F8A47 /* Actions */,
+				8AFC19C124319D18001F8A47 /* Source */,
+				8AFC19B42431990E001F8A47 /* FTUWebJavaScriptBridge */,
+			);
+			path = WebView;
+			sourceTree = "<group>";
+		};
+		8AFC19B42431990E001F8A47 /* FTUWebJavaScriptBridge */ = {
+			isa = PBXGroup;
+			children = (
+				8AFC19BC2431990E001F8A47 /* FTUWebViewJavascriptBridge_JS.h */,
+				8AFC19B82431990E001F8A47 /* FTUWebViewJavascriptBridge_JS.m */,
+				8AFC19B52431990E001F8A47 /* FTUWebViewJavascriptBridge.h */,
+				8AFC19B92431990E001F8A47 /* FTUWebViewJavascriptBridge.m */,
+				8AFC19BB2431990E001F8A47 /* FTUWebViewJavascriptBridgeBase.h */,
+				8AFC19B72431990E001F8A47 /* FTUWebViewJavascriptBridgeBase.m */,
+				8AFC19B62431990E001F8A47 /* FTUWKWebViewJavascriptBridge.h */,
+				8AFC19BA2431990E001F8A47 /* FTUWKWebViewJavascriptBridge.m */,
+			);
+			path = FTUWebJavaScriptBridge;
+			sourceTree = "<group>";
+		};
+		8AFC19C124319D18001F8A47 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				8AFC19CB2431DE64001F8A47 /* Manager */,
+				8AFC19C224319D68001F8A47 /* FTUBaseWebViewController.h */,
+				8AFC19C324319D68001F8A47 /* FTUBaseWebViewController.m */,
+				8AFC19C82431DD78001F8A47 /* FTUActionWebViewController.h */,
+				8AFC19C92431DD78001F8A47 /* FTUActionWebViewController.m */,
+				8AFC19D924322D17001F8A47 /* FTUWebViewController.h */,
+				8AFC19DA24322D17001F8A47 /* FTUWebViewController.m */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		8AFC19CB2431DE64001F8A47 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				8AFC19CC2431DE8C001F8A47 /* FTUWebActionManager.h */,
+				8AFC19CD2431DE8C001F8A47 /* FTUWebActionManager.m */,
+				8AFC19D62431F335001F8A47 /* FTUWebActionManager+ShareInstance.h */,
+				8AFC19D72431F335001F8A47 /* FTUWebActionManager+ShareInstance.m */,
+				8AFC19CF2431E3A9001F8A47 /* Model */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		8AFC19CF2431E3A9001F8A47 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8AFC19D02431E3E1001F8A47 /* FTUWebURLFilterObject.h */,
+				8AFC19D12431E3E1001F8A47 /* FTUWebURLFilterObject.m */,
+				8AFC19D32431E3FA001F8A47 /* FTUWebJSBridgeObject.h */,
+				8AFC19D42431E3FA001F8A47 /* FTUWebJSBridgeObject.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8AFC19DC24323487001F8A47 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				8AFC19E0243234D3001F8A47 /* URLFilter */,
+				8AFC19DF243234CD001F8A47 /* JSBridge */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		8AFC19DF243234CD001F8A47 /* JSBridge */ = {
+			isa = PBXGroup;
+			children = (
+				8AFC19E324323520001F8A47 /* FTUWebJSBridgeConfig.plist */,
+			);
+			path = JSBridge;
+			sourceTree = "<group>";
+		};
+		8AFC19E0243234D3001F8A47 /* URLFilter */ = {
+			isa = PBXGroup;
+			children = (
+				8AFC19E52432352C001F8A47 /* FTUWebFilterConfig.plist */,
+			);
+			path = URLFilter;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8AFC194E24319642001F8A47 /* FTUWebView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8AFC197E24319645001F8A47 /* Build configuration list for PBXNativeTarget "FTUWebView" */;
+			buildPhases = (
+				8AFC194B24319642001F8A47 /* Sources */,
+				8AFC194C24319642001F8A47 /* Frameworks */,
+				8AFC194D24319642001F8A47 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FTUWebView;
+			productName = FTUWebView;
+			productReference = 8AFC194F24319642001F8A47 /* FTUWebView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8AFC196924319645001F8A47 /* FTUWebViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8AFC198124319645001F8A47 /* Build configuration list for PBXNativeTarget "FTUWebViewTests" */;
+			buildPhases = (
+				8AFC196624319645001F8A47 /* Sources */,
+				8AFC196724319645001F8A47 /* Frameworks */,
+				8AFC196824319645001F8A47 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8AFC196C24319645001F8A47 /* PBXTargetDependency */,
+			);
+			name = FTUWebViewTests;
+			productName = FTUWebViewTests;
+			productReference = 8AFC196A24319645001F8A47 /* FTUWebViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8AFC197424319645001F8A47 /* FTUWebViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8AFC198424319645001F8A47 /* Build configuration list for PBXNativeTarget "FTUWebViewUITests" */;
+			buildPhases = (
+				8AFC197124319645001F8A47 /* Sources */,
+				8AFC197224319645001F8A47 /* Frameworks */,
+				8AFC197324319645001F8A47 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8AFC197724319645001F8A47 /* PBXTargetDependency */,
+			);
+			name = FTUWebViewUITests;
+			productName = FTUWebViewUITests;
+			productReference = 8AFC197524319645001F8A47 /* FTUWebViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8AFC194724319642001F8A47 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = ke;
+				TargetAttributes = {
+					8AFC194E24319642001F8A47 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+					8AFC196924319645001F8A47 = {
+						CreatedOnToolsVersion = 11.4;
+						TestTargetID = 8AFC194E24319642001F8A47;
+					};
+					8AFC197424319645001F8A47 = {
+						CreatedOnToolsVersion = 11.4;
+						TestTargetID = 8AFC194E24319642001F8A47;
+					};
+				};
+			};
+			buildConfigurationList = 8AFC194A24319642001F8A47 /* Build configuration list for PBXProject "FTUWebView" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8AFC194624319642001F8A47;
+			productRefGroup = 8AFC195024319642001F8A47 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8AFC194E24319642001F8A47 /* FTUWebView */,
+				8AFC196924319645001F8A47 /* FTUWebViewTests */,
+				8AFC197424319645001F8A47 /* FTUWebViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8AFC194D24319642001F8A47 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AFC196224319645001F8A47 /* LaunchScreen.storyboard in Resources */,
+				8AFC19E424323520001F8A47 /* FTUWebJSBridgeConfig.plist in Resources */,
+				8AFC195F24319645001F8A47 /* Assets.xcassets in Resources */,
+				8AFC195D24319642001F8A47 /* Main.storyboard in Resources */,
+				8AFC19E62432352C001F8A47 /* FTUWebFilterConfig.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AFC196824319645001F8A47 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AFC197324319645001F8A47 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8AFC194B24319642001F8A47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AFC19BE2431990E001F8A47 /* FTUWebViewJavascriptBridge_JS.m in Sources */,
+				8AFC19BD2431990E001F8A47 /* FTUWebViewJavascriptBridgeBase.m in Sources */,
+				8AFC19C02431990E001F8A47 /* FTUWKWebViewJavascriptBridge.m in Sources */,
+				8AFC19BF2431990E001F8A47 /* FTUWebViewJavascriptBridge.m in Sources */,
+				8AFC19C72431B03C001F8A47 /* ViewController.m in Sources */,
+				8AFC19CA2431DD78001F8A47 /* FTUActionWebViewController.m in Sources */,
+				8AFC195424319642001F8A47 /* AppDelegate.m in Sources */,
+				8AFC19892431972F001F8A47 /* FTUTabWebViewController.m in Sources */,
+				8AFC19D22431E3E1001F8A47 /* FTUWebURLFilterObject.m in Sources */,
+				8AFC19D82431F335001F8A47 /* FTUWebActionManager+ShareInstance.m in Sources */,
+				8AFC19D52431E3FA001F8A47 /* FTUWebJSBridgeObject.m in Sources */,
+				8AFC196524319645001F8A47 /* main.m in Sources */,
+				8AFC19C424319D68001F8A47 /* FTUBaseWebViewController.m in Sources */,
+				8AFC19DB24322D17001F8A47 /* FTUWebViewController.m in Sources */,
+				8AFC19CE2431DE8C001F8A47 /* FTUWebActionManager.m in Sources */,
+				8AFC195724319642001F8A47 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AFC196624319645001F8A47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AFC196F24319645001F8A47 /* FTUWebViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AFC197124319645001F8A47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AFC197A24319645001F8A47 /* FTUWebViewUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8AFC196C24319645001F8A47 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8AFC194E24319642001F8A47 /* FTUWebView */;
+			targetProxy = 8AFC196B24319645001F8A47 /* PBXContainerItemProxy */;
+		};
+		8AFC197724319645001F8A47 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8AFC194E24319642001F8A47 /* FTUWebView */;
+			targetProxy = 8AFC197624319645001F8A47 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8AFC195B24319642001F8A47 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8AFC195C24319642001F8A47 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8AFC196024319645001F8A47 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8AFC196124319645001F8A47 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8AFC197C24319645001F8A47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8AFC197D24319645001F8A47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8AFC197F24319645001F8A47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FTUWebView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.whycoco.FTUWebView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		8AFC198024319645001F8A47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FTUWebView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.whycoco.FTUWebView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		8AFC198224319645001F8A47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FTUWebViewTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.whycoco.FTUWebViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FTUWebView.app/FTUWebView";
+			};
+			name = Debug;
+		};
+		8AFC198324319645001F8A47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FTUWebViewTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.whycoco.FTUWebViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FTUWebView.app/FTUWebView";
+			};
+			name = Release;
+		};
+		8AFC198524319645001F8A47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FTUWebViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.whycoco.FTUWebViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FTUWebView;
+			};
+			name = Debug;
+		};
+		8AFC198624319645001F8A47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FTUWebViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.whycoco.FTUWebViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FTUWebView;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8AFC194A24319642001F8A47 /* Build configuration list for PBXProject "FTUWebView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AFC197C24319645001F8A47 /* Debug */,
+				8AFC197D24319645001F8A47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8AFC197E24319645001F8A47 /* Build configuration list for PBXNativeTarget "FTUWebView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AFC197F24319645001F8A47 /* Debug */,
+				8AFC198024319645001F8A47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8AFC198124319645001F8A47 /* Build configuration list for PBXNativeTarget "FTUWebViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AFC198224319645001F8A47 /* Debug */,
+				8AFC198324319645001F8A47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8AFC198424319645001F8A47 /* Build configuration list for PBXNativeTarget "FTUWebViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AFC198524319645001F8A47 /* Debug */,
+				8AFC198624319645001F8A47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8AFC194724319642001F8A47 /* Project object */;
+}
