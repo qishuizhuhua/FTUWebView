@@ -27,8 +27,12 @@ typedef NSDictionary WVJBMessage;
 
 
 @property (weak, nonatomic) id<WebViewJavascriptBridgeBaseDelegate> delegate;
+
+/// 保存交互过程中需要发送给JavaScript环境的消息
 @property (strong, nonatomic) NSMutableArray *startupMessageQueue;
+/// 保存oc于JavaScript环境相互调用的回调，通过_uniqueId加上时间戳来确定每个调用的回调
 @property (strong, nonatomic) NSMutableDictionary *responseCallbacks;
+/// 保存OC环境注册的方法，key是方法名，value是这个方法对应的回调block
 @property (strong, nonatomic) NSMutableDictionary *messageHandlers;
 @property (strong, nonatomic) WVJBHandler messageHandler;
 

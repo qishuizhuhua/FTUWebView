@@ -21,6 +21,8 @@ static int logMaxLength = 500;
 
 + (void)enableLogging { logging = true; }
 + (void)setLogMaxLength:(int)length { logMaxLength = length; }
+
+//初始化基础环境需要保存的内容
 - (id)init
 {
     if (self = [super init]) {
@@ -46,6 +48,7 @@ static int logMaxLength = 500;
     _uniqueId = 0;
 }
 
+///将oc消息的，参数data，回调IDcallbackId，消息名handlerName存入一个名为message字典中
 - (void)sendData:(id)data responseCallback:(WVJBResponseCallback)responseCallback handlerName:(NSString *)handlerName
 {
     NSMutableDictionary *message = [NSMutableDictionary dictionary];
@@ -66,6 +69,7 @@ static int logMaxLength = 500;
     [self _queueMessage:message];
 }
 
+//从WEB发送的消息返回后，在这里处理
 - (void)flushMessageQueue:(NSString *)messageQueueString
 {
     if (messageQueueString == nil || messageQueueString.length == 0) {
@@ -119,10 +123,12 @@ static int logMaxLength = 500;
     }
 }
 
+//初始化注入WebViewJavascriptBridge_JS文件
 - (void)injectJavascriptFile
 {
     NSString *js = FTUWebViewJavascriptBridge_JS();
     [self _evaluateJavascript:js];
+    //如果javascript环境初始化完成以后，有startupMessageQueue消息。则立即发送消息。
     if (self.startupMessageQueue) {
         NSArray *queue = self.startupMessageQueue;
         self.startupMessageQueue = nil;
@@ -140,18 +146,23 @@ static int logMaxLength = 500;
     return [self isBridgeLoadedURL:url] || [self isQueueMessageURL:url];
 }
 
+/*
+   是否是WebViewJavascriptBridge发送或者接受的消息
+*/
 - (BOOL)isSchemeMatch:(NSURL *)url
 {
     NSString *scheme = url.scheme.lowercaseString;
     return [scheme isEqualToString:kNewProtocolScheme] || [scheme isEqualToString:kOldProtocolScheme];
 }
 
+///是WebViewJavascriptBridge发送的消息，还是WebViewJavascriptBridge的初始化消息。
 - (BOOL)isQueueMessageURL:(NSURL *)url
 {
     NSString *host = url.host.lowercaseString;
     return [self isSchemeMatch:url] && [host isEqualToString:kQueueHasMessage];
 }
 
+///是否是https://__bridge_loaded__这种初始化加载消息
 - (BOOL)isBridgeLoadedURL:(NSURL *)url
 {
     NSString *host = url.host.lowercaseString;
@@ -180,7 +191,7 @@ static int logMaxLength = 500;
 
 // Private
 // -------------------------------------------
-
+//把javascript代码写入webview
 - (void)_evaluateJavascript:(NSString *)javascriptCommand
 {
     [self.delegate _evaluateJavascript:javascriptCommand];
@@ -195,6 +206,7 @@ static int logMaxLength = 500;
     }
 }
 
+///OC消息序列化，转化为javascript环境的格式，在主线程中调用_evaluateJavascript
 - (void)_dispatchMessage:(WVJBMessage *)message
 {
     NSString *messageJSON = [self _serializeMessage:message pretty:NO];

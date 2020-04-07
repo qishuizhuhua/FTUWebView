@@ -33,7 +33,6 @@
 
 @interface FTUWebViewJavascriptBridge : WVJB_WEBVIEW_DELEGATE_INTERFACE
 
-
 + (instancetype)bridgeForWebView:(id)webView;
 + (instancetype)bridge:(id)webView;
 

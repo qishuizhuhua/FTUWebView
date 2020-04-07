@@ -28,8 +28,8 @@
 - (IBAction)URLAction:(id)sender {
     FTUWebViewController *vc = [[FTUWebViewController alloc] initWithWebActionManager:[FTUWebActionManager shareInstance]];
     vc.hidesBottomBarWhenPushed = true;
-    [vc loadWithURL:[NSURL URLWithString:@"https://www.baidu.com"]];
-//    [vc loadWithURLString:@"http://whycoco.coding.me/helloJRBridge/index.html"];
+//    [vc loadWithURL:[NSURL URLWithString:@"https://www.baidu.com"]];
+    [vc loadWithURLString:@"http://whycoco.coding.me/helloJRBridge/index.html"];
     [self.navigationController pushViewController:vc animated:YES];
 }
 

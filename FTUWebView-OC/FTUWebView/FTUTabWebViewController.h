@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FTUTabBarWebViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface FTUTabWebViewController : UIViewController
+@interface FTUTabWebViewController : FTUTabBarWebViewController
 
 @end
 

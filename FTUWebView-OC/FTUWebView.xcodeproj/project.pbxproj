@@ -30,6 +30,11 @@
 		8AFC19DB24322D17001F8A47 /* FTUWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AFC19DA24322D17001F8A47 /* FTUWebViewController.m */; };
 		8AFC19E424323520001F8A47 /* FTUWebJSBridgeConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8AFC19E324323520001F8A47 /* FTUWebJSBridgeConfig.plist */; };
 		8AFC19E62432352C001F8A47 /* FTUWebFilterConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8AFC19E52432352C001F8A47 /* FTUWebFilterConfig.plist */; };
+		8AFC1BFD243595FD001F8A47 /* FTUWebURLFilterTelObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AFC1BFC243595FD001F8A47 /* FTUWebURLFilterTelObject.m */; };
+		8AFC1C062435D929001F8A47 /* FTUWebJSBridgeObject+ResponseDataFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AFC1C052435D929001F8A47 /* FTUWebJSBridgeObject+ResponseDataFormatter.m */; };
+		8AFC1C092435D9A0001F8A47 /* FTUWebJSBridgeCloseWebViewObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AFC1C082435D9A0001F8A47 /* FTUWebJSBridgeCloseWebViewObject.m */; };
+		8AFC1C0C2435DB64001F8A47 /* FTUTabBarWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AFC1C0B2435DB63001F8A47 /* FTUTabBarWebViewController.m */; };
+		8AFC1C0F2435DC61001F8A47 /* TabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AFC1C0E2435DC61001F8A47 /* TabViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +99,16 @@
 		8AFC19DA24322D17001F8A47 /* FTUWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FTUWebViewController.m; sourceTree = "<group>"; };
 		8AFC19E324323520001F8A47 /* FTUWebJSBridgeConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = FTUWebJSBridgeConfig.plist; sourceTree = "<group>"; };
 		8AFC19E52432352C001F8A47 /* FTUWebFilterConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = FTUWebFilterConfig.plist; sourceTree = "<group>"; };
+		8AFC1BFB243595FD001F8A47 /* FTUWebURLFilterTelObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FTUWebURLFilterTelObject.h; sourceTree = "<group>"; };
+		8AFC1BFC243595FD001F8A47 /* FTUWebURLFilterTelObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FTUWebURLFilterTelObject.m; sourceTree = "<group>"; };
+		8AFC1C042435D929001F8A47 /* FTUWebJSBridgeObject+ResponseDataFormatter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FTUWebJSBridgeObject+ResponseDataFormatter.h"; sourceTree = "<group>"; };
+		8AFC1C052435D929001F8A47 /* FTUWebJSBridgeObject+ResponseDataFormatter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "FTUWebJSBridgeObject+ResponseDataFormatter.m"; sourceTree = "<group>"; };
+		8AFC1C072435D9A0001F8A47 /* FTUWebJSBridgeCloseWebViewObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FTUWebJSBridgeCloseWebViewObject.h; sourceTree = "<group>"; };
+		8AFC1C082435D9A0001F8A47 /* FTUWebJSBridgeCloseWebViewObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FTUWebJSBridgeCloseWebViewObject.m; sourceTree = "<group>"; };
+		8AFC1C0A2435DB63001F8A47 /* FTUTabBarWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FTUTabBarWebViewController.h; sourceTree = "<group>"; };
+		8AFC1C0B2435DB63001F8A47 /* FTUTabBarWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FTUTabBarWebViewController.m; sourceTree = "<group>"; };
+		8AFC1C0D2435DC61001F8A47 /* TabViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabViewController.h; sourceTree = "<group>"; };
+		8AFC1C0E2435DC61001F8A47 /* TabViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +173,8 @@
 				8AFC196024319645001F8A47 /* LaunchScreen.storyboard */,
 				8AFC196324319645001F8A47 /* Info.plist */,
 				8AFC196424319645001F8A47 /* main.m */,
+				8AFC1C0D2435DC61001F8A47 /* TabViewController.h */,
+				8AFC1C0E2435DC61001F8A47 /* TabViewController.m */,
 			);
 			path = FTUWebView;
 			sourceTree = "<group>";
@@ -215,6 +232,8 @@
 				8AFC19C92431DD78001F8A47 /* FTUActionWebViewController.m */,
 				8AFC19D924322D17001F8A47 /* FTUWebViewController.h */,
 				8AFC19DA24322D17001F8A47 /* FTUWebViewController.m */,
+				8AFC1C0A2435DB63001F8A47 /* FTUTabBarWebViewController.h */,
+				8AFC1C0B2435DB63001F8A47 /* FTUTabBarWebViewController.m */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -238,6 +257,8 @@
 				8AFC19D12431E3E1001F8A47 /* FTUWebURLFilterObject.m */,
 				8AFC19D32431E3FA001F8A47 /* FTUWebJSBridgeObject.h */,
 				8AFC19D42431E3FA001F8A47 /* FTUWebJSBridgeObject.m */,
+				8AFC1C042435D929001F8A47 /* FTUWebJSBridgeObject+ResponseDataFormatter.h */,
+				8AFC1C052435D929001F8A47 /* FTUWebJSBridgeObject+ResponseDataFormatter.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -255,6 +276,8 @@
 			isa = PBXGroup;
 			children = (
 				8AFC19E324323520001F8A47 /* FTUWebJSBridgeConfig.plist */,
+				8AFC1C072435D9A0001F8A47 /* FTUWebJSBridgeCloseWebViewObject.h */,
+				8AFC1C082435D9A0001F8A47 /* FTUWebJSBridgeCloseWebViewObject.m */,
 			);
 			path = JSBridge;
 			sourceTree = "<group>";
@@ -263,6 +286,8 @@
 			isa = PBXGroup;
 			children = (
 				8AFC19E52432352C001F8A47 /* FTUWebFilterConfig.plist */,
+				8AFC1BFB243595FD001F8A47 /* FTUWebURLFilterTelObject.h */,
+				8AFC1BFC243595FD001F8A47 /* FTUWebURLFilterTelObject.m */,
 			);
 			path = URLFilter;
 			sourceTree = "<group>";
@@ -403,18 +428,23 @@
 				8AFC19BD2431990E001F8A47 /* FTUWebViewJavascriptBridgeBase.m in Sources */,
 				8AFC19C02431990E001F8A47 /* FTUWKWebViewJavascriptBridge.m in Sources */,
 				8AFC19BF2431990E001F8A47 /* FTUWebViewJavascriptBridge.m in Sources */,
+				8AFC1C092435D9A0001F8A47 /* FTUWebJSBridgeCloseWebViewObject.m in Sources */,
 				8AFC19C72431B03C001F8A47 /* ViewController.m in Sources */,
 				8AFC19CA2431DD78001F8A47 /* FTUActionWebViewController.m in Sources */,
 				8AFC195424319642001F8A47 /* AppDelegate.m in Sources */,
+				8AFC1BFD243595FD001F8A47 /* FTUWebURLFilterTelObject.m in Sources */,
 				8AFC19892431972F001F8A47 /* FTUTabWebViewController.m in Sources */,
 				8AFC19D22431E3E1001F8A47 /* FTUWebURLFilterObject.m in Sources */,
 				8AFC19D82431F335001F8A47 /* FTUWebActionManager+ShareInstance.m in Sources */,
+				8AFC1C0F2435DC61001F8A47 /* TabViewController.m in Sources */,
 				8AFC19D52431E3FA001F8A47 /* FTUWebJSBridgeObject.m in Sources */,
 				8AFC196524319645001F8A47 /* main.m in Sources */,
 				8AFC19C424319D68001F8A47 /* FTUBaseWebViewController.m in Sources */,
 				8AFC19DB24322D17001F8A47 /* FTUWebViewController.m in Sources */,
+				8AFC1C062435D929001F8A47 /* FTUWebJSBridgeObject+ResponseDataFormatter.m in Sources */,
 				8AFC19CE2431DE8C001F8A47 /* FTUWebActionManager.m in Sources */,
 				8AFC195724319642001F8A47 /* SceneDelegate.m in Sources */,
+				8AFC1C0C2435DB64001F8A47 /* FTUTabBarWebViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -584,6 +614,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 562CLLZ5A8;
 				INFOPLIST_FILE = FTUWebView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -601,6 +632,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 562CLLZ5A8;
 				INFOPLIST_FILE = FTUWebView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (

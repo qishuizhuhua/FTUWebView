@@ -24,6 +24,7 @@
  *****/
 
 + (void)enableLogging { [FTUWebViewJavascriptBridgeBase enableLogging]; }
+
 + (instancetype)bridgeForWebView:(WKWebView *)webView
 {
     FTUWKWebViewJavascriptBridge *bridge = [[self alloc] init];
@@ -67,6 +68,7 @@
 
 - (void)registerHandler:(NSString *)handlerName handler:(WVJBHandler)handler
 {
+    ///回调实现保存在messageHandlers
     _base.messageHandlers[handlerName] = [handler copy];
 }
 
@@ -109,6 +111,7 @@
 /* WKWebView Specific Internals
  ******************************/
 
+//初始化
 - (void)_setupInstance:(WKWebView *)webView
 {
     _webView = webView;
@@ -117,13 +120,14 @@
     _base.delegate = self;
 }
 
-
+///把消息或者WEB的回调，发送到OC
 - (void)WKFlushMessageQueue
 {
     [_webView evaluateJavaScript:[_base webViewJavascriptFetchQueyCommand] completionHandler:^(NSString *result, NSError *error) {
         if (error != nil) {
             NSLog(@"WebViewJavascriptBridge: WARNING: Error when trying to fetch data from WKWebView: %@", error);
         }
+        //把消息或者WEB回调，发送到OC
         [_base flushMessageQueue:result];
     }];
 }
@@ -169,6 +173,8 @@
     }
 }
 
+
+//webview有跳转，就会调用webview的此代理方法
 - (void)webView:(WKWebView *)webView decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler
 {
     if (webView != _webView) {
@@ -176,10 +182,13 @@
     }
     NSURL *url = navigationAction.request.URL;
     __strong typeof(_webViewDelegate) strongDelegate = _webViewDelegate;
-
+    
+    //如果是WebViewJavascriptBridge发送或者接受的消息，则进行处理。否则按照正常流程处理
     if ([_base isWebViewJavascriptBridgeURL:url]) {
+        //如果是第一次，注入JS代码（初始化js环境）
         if ([_base isBridgeLoadedURL:url]) {
             [_base injectJavascriptFile];
+        //非第一次，处理web发过来的消息
         } else if ([_base isQueueMessageURL:url]) {
             [self WKFlushMessageQueue];
         } else {
@@ -188,7 +197,8 @@
         decisionHandler(WKNavigationActionPolicyCancel);
         return;
     }
-
+    
+    //正常webview代理流程
     if (strongDelegate && [strongDelegate respondsToSelector:@selector(webView:decidePolicyForNavigationAction:decisionHandler:)]) {
         [_webViewDelegate webView:webView decidePolicyForNavigationAction:navigationAction decisionHandler:decisionHandler];
     } else {

@@ -18,12 +18,19 @@
 
 @interface FTUWKWebViewJavascriptBridge : NSObject <WKNavigationDelegate, WebViewJavascriptBridgeBaseDelegate>
 
+/// 初始化一个OC环境的桥WKwebViewJavascriptBridge
+/// @param webView WKWebView页面
 + (instancetype)bridgeForWebView:(WKWebView *)webView;
+
+/// 开启日志
 + (void)enableLogging;
 
 - (void)registerDefaultHandler: (WVJBHandler)handler;
 - (void)removeDefaultHandler;
 
+/// oc环境注册方法
+/// @param handlerName OC提供给JS的方法名字
+/// @param handler OC给JS的回调
 - (void)registerHandler:(NSString *)handlerName handler:(WVJBHandler)handler;
 - (void)removeHandler:(NSString *)handlerName;
 - (void)removeAllHandler;
