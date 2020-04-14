@@ -7,6 +7,7 @@
 //
 
 #import "FTUWebViewController.h"
+#import "AppDelegate.h"
 
 @interface FTUWebViewController ()
 
@@ -37,8 +38,7 @@
     [self.view addSubview:self.loadProgressView];
     UIDeviceOrientation orientation = [UIDevice currentDevice].orientation;
     if (UIDeviceOrientationIsPortrait(orientation)) {
-        //高度要做适配
-        [self.loadProgressView setFrame:CGRectMake(0, 100, self.view.bounds.size.width, 1.5)];
+        [self.loadProgressView setFrame:CGRectMake(0, 89, self.view.bounds.size.width, 1.5)];
     } else {
         [self.loadProgressView setFrame:CGRectMake(0, 32, self.view.bounds.size.width, 1.5)];
     }
